@@ -19,3 +19,12 @@ CLI tool for encrypting and decrypting R.E.P.O. save files.\
 - The `level` stat is 1 less than the ingame level; level 5 in the save file is level 6 ingame.
 - Player properties like `playerHealth` and `playerUpgradeHealth`... use Steam IDs as keys.
 - The `timePlayed` value is in seconds.
+- Adding a new player works this way:
+```
+addPlayer(SteamID)
+  set playerHealth for SteamID to 100
+  add SteamID to playerNames value
+
+  for every key starting with "player" (ex. playerUpgradeHealth)
+    if the key doesnt contain SteamID, add it and set it to 0
+```
