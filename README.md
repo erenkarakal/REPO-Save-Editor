@@ -1,5 +1,5 @@
 # REPO-Save-Editor
-CLI tool for encrypting and decrypting R.E.P.O. save files.\
+CLI tool for encrypting and decrypting R.E.P.O. save files.
 - Requires [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 # Usage
